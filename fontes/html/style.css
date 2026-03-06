@@ -237,6 +237,13 @@ section h2 {
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
+#contato {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    text-align: center;
+}
+
 /* Container do contato */
 .contato-container {
     padding-top: 60px;
