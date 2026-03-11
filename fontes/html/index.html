@@ -219,7 +219,7 @@
 
     <div class="contato-container">
 
-        <form class="form-contato">
+        <form class="form-contato" action="https://formsubmit.co/candangobsb17@gmail.com" method="post" onsubmit="confirmarEnvio()">
             <input type="text" placeholder="Seu nome" required>
             <input type="email" placeholder="Seu e-mail" required>
             <input type="tel" placeholder="Seu telefone">
@@ -260,7 +260,11 @@
 </html>
 
 <script>
-function mostrarAlerta(){
-    alert("Voce será direcionado para página que fala sobre nossos tratamentos.");
+function confirmarEnvio() {
+if (confirm("Deseja realmente enviar os dados para o banco?")) {
+return true; // envia para o banco
+} else {
+return false; // cancela o envio
+}
 }
 </script>
