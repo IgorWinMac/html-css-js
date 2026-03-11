@@ -99,7 +99,7 @@
 
             <div class="contato-container">
 
-                <form class="form-contato" action="https://formsubmit.co/candangobsb17@gmail.com" method="post">
+                <form class="form-contato" action="https://formsubmit.co/candangobsb17@gmail.com" method="post" onsubmit="confirmarEnvio()">
                     <input type="text" placeholder="Seu nome" required>
                     <input type="email" placeholder="Seu e-mail" required>
                     <input type="tel" placeholder="Seu telefone">
@@ -120,3 +120,14 @@
 
 </body>
 </html>
+
+<script>
+    function confirmarEnvio(){
+        if(confirm("Deseja realmente enviar os dados para o banco "))
+            {
+                return true;
+            }else{
+                return false;
+            }
+    }
+</script>
